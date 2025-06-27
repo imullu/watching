@@ -6,17 +6,35 @@ body{
   padding: 0;
   box-sizing: border-box;
 }
-.top-bar {
-  background-color: #a1a1df; 
-  padding: 10px 0;
-  text-align: center;
-  width: 100%;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #a1a1df;
+  color: white;
+  padding: 20px 30px;
+  position: sticky; 
+  top: 0;
+  z-index: 1000;
 }
 .logo {
-  height: 60px; 
+  width: 160px;  
+  height: auto;
+}
+.logo {
+  max-width: 140px;
+  max-height: 90px;
+  object-fit: contain;
+}
+#searchInput {
+  padding: 8px;
+  width: 200px;
+  border: none;
+  border-radius: 15px;
 }
 .container {
-  display: flex;       
+  display: flex;   
+  flex-wrap: wrap;    
   gap: 13px;          
 }
 .anime {
@@ -64,3 +82,4 @@ body{
 .low-rating {
   color: #f44336; 
 }
+

@@ -13,3 +13,15 @@ const ratings = document.querySelectorAll('.rating');
       rating.classList.add('low-rating');
     }
   });
+
+  const input = document.getElementById("searchInput");
+const cards = document.querySelectorAll(".anime");
+
+input.addEventListener("input", () => {
+  const value = input.value.toLowerCase();
+
+  cards.forEach(card => {
+    const title = card.querySelector("h3").textContent.toLowerCase();
+    card.style.display = title.includes(value) ? "block" : "none";
+  });
+});
