@@ -25,3 +25,5 @@ input.addEventListener("input", () => {
     card.style.display = title.includes(value) ? "block" : "none";
   });
 });
+
+
