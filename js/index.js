@@ -26,4 +26,11 @@ input.addEventListener("input", () => {
   });
 });
 
+  const generos = document.getElementById('generos');
+  const dropdown = document.getElementById('dropdown');
+
+  generos.addEventListener('click', function(){
+    dropdown.classList.toggle('open');
+  });
+
 

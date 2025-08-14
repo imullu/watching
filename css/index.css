@@ -17,6 +17,44 @@ body{
   top: 0;
   z-index: 1000;
 }
+.generos{
+  background-color: #ffffff;
+  padding: 8px;
+  width: 200px;
+  border-radius: 15px;
+}
+.generos:hover{
+  cursor: pointer;
+}
+.dropdown {
+  position: relative;
+
+  &.open{
+    .dropdown-a{
+      display: block;
+    }
+  }
+}
+.dropdown-a{
+  display: none;
+  position: absolute;
+  background-color: #ef97a3;
+  min-width: 200px;
+  z-index: 1;
+  box-shadow: 0px 4px 6px black(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.dropdown-a a{
+  color: #ffffff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-a a:hover{
+  background-color: #df5c7e;
+
+}
 .logo {
   max-width: 140px;
   max-height: 90px;
